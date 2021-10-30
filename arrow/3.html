@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<script>
+/*3.Almacenar en un Map los nombres de ciudades como clave y la cantidad de
+ habitantes como valores. Mostrar en una lista HTML que se debe crear
+en forma dinámica inmediatamente luego que se carga la página.
+*/
+
+var ciudades = new Map();
+ciudades.set('Madrid', '3.223M')
+ciudades.set('Barcelona', '1,62M')
+
+var mostrarCiudades = ciudades.map(function listar(){
+    
+})
+
+console.log(mostrarCiudades)
+document.write(ciudades.get(1) + 'con ' + ciudades.get('1' + ' habitantes'))
+document.write('Existen ' + ciudades.size + ' ciudades')
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function borrarCiudad(){
+
+var opcion = prompt('Que ciudad quieres borrar? ')
+
+ciudades.delete(opcion)
+
+alert('Se ha borrado ' + opcion + 'Recarge la página web')
+
+}
+
+function añadir(){
+
+//var nuevaCiudad = prompt('Escribe la nueva ciudad con el siguiente formato: 'ciudad', 'nº habitantes'')
+ciudades.set(nuevaCiudad)
+alert('Recargue la pagina web')
+
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+</script>
+
+</html>

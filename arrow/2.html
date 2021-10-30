@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+
+<script>
+
+/*2. Crear una calculadora con funciones flecha y las operaciones básicas (+ , * , - , / ). Utilizar dos
+parámetros de entrada y 4 botones.
+*/
+
+
+const numero1 = parseInt(prompt('Valor numero 1'))
+const numero2 = parseInt(prompt('Valor numero 2'))
+
+
+var suma = (numero1, numero2) => {
+  suma= numero1+numero2
+alert(suma)  
+}
+
+var resta = (numero1, numero2) => {
+  resta= numero1-numero2
+alert(resta) 
+ }
+
+
+var dividir = (numero1, numero2) => {
+  dividir= numero1/numero2
+alert(dividir)
+
+}
+
+var multiplicar = (numero1, numero2) => {
+  multiplicar= numero1*numero2
+alert(multiplicar) 
+}
+
+</script>
+<form>
+<button type="button" onclick="suma();">+</button>
+<button type="button" onclick="resta();">-</button>
+<button type="button" onclick="dividir();">/</button>
+<button type="button" onclick="multiplicar();">*</button>
+
+  </form>
+
+</html>

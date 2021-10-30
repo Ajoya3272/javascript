@@ -1,0 +1,93 @@
+<html>
+
+
+<script>
+/*Diseña una clase “Hospital”. Tendrá como atributos “nombre”, “ciudad” y “numPacientes” (número de pacientes ingresados). 
+Cada paciente se representará como un objeto de la clase “Paciente”. En ella se guardaran los atributos “DNI”, “nombre”, “enfermedad”.
+
+Implementa un método en “Hospital” que reciba el código de paciente y se le de alta a dicho paciente (equivale a eliminar al paciente).
+
+*/
+
+
+// Usamos el modo estricto
+"use strict";
+
+class paciente {
+
+constructor(DNI, nombre, enfermedad) {
+	// Atributos clase aeropuerto
+	this.DNI = DNI;
+	this.nombre = nombre;
+	this.enfermedad = enfermedad;
+} }
+
+
+
+// Definimos la clase hospital
+class hospital{
+	constructor(nombre, ciudad, numPacientes) {
+		// Atributos clase hospital
+		this.nombre = nombre;
+		this.ciudad = ciudad;
+		this.numPacientes = numPacientes;
+	}
+
+	darDeAlta(){
+		var comprobar=prompt('Escribe el DNI del paciente a quien se le va a dar de alta')
+	
+		if(comprobar==this.DNI){
+			alert('Se ha dado de alta a ' + paciente.this.nombre)
+			delete paciente.DNI
+			delete paciente.nombre
+			delete paciente.enfermedad
+			
+		}
+		else {
+			alert('DNI incorrecto')
+		}
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+function main() {
+
+	// Creo un aeropuerto
+
+	let hospitalLol = new hospital('Yil de Dios','Sevilla', '986' );
+	let paciente1 = new paciente('6','juan','sida' )
+	let paciente2 = new paciente('8','pepe','cancer' )
+
+	document.write('nombre paciente: ' + paciente1.nombre + ' DNI: ' + paciente1.DNI + ' Enfermedad: ' + paciente1.enfermedad + '<br>')
+	document.write('nombre paciente: ' + paciente2.nombre + ' DNI: ' + paciente2.DNI + ' Enfermedad: ' + paciente2.enfermedad)
+	hospitalLol.darDeAlta()
+}
+
+// Llamamos a la funcion principal
+main();
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</html>
