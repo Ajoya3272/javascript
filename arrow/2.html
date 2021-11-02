@@ -8,30 +8,42 @@ parámetros de entrada y 4 botones.
 */
 
 
-const numero1 = parseInt(prompt('Valor numero 1'))
-const numero2 = parseInt(prompt('Valor numero 2'))
 
 
-var suma = (numero1, numero2) => {
-  suma= numero1+numero2
-alert(suma)  
+
+var suma = resultado => {
+  var numero1 = parseInt(prompt('Valor numero 1'))
+var numero2 = parseInt(prompt('Valor numero 2'))
+ resultado= parseInt(numero1)+parseInt(numero2)
+   
+  document.write(resultado)
 }
 
-var resta = (numero1, numero2) => {
-  resta= numero1-numero2
-alert(resta) 
- }
 
-
-var dividir = (numero1, numero2) => {
-  dividir= numero1/numero2
-alert(dividir)
-
+var resta = resultado => {
+  var numero1 = parseInt(prompt('Valor numero 1'))
+var numero2 = parseInt(prompt('Valor numero 2'))
+ resultado= parseInt(numero1)-parseInt(numero2)
+   
+  document.write(resultado)
 }
 
-var multiplicar = (numero1, numero2) => {
-  multiplicar= numero1*numero2
-alert(multiplicar) 
+
+var multiplicar = resultado => {
+  var numero1 = parseInt(prompt('Valor numero 1'))
+var numero2 = parseInt(prompt('Valor numero 2'))
+ resultado= parseInt(numero1)*parseInt(numero2)
+   
+  document.write(resultado)
+}
+
+
+var dividir = resultado => {
+  var numero1 = parseInt(prompt('Valor numero 1'))
+var numero2 = parseInt(prompt('Valor numero 2'))
+ resultado= parseInt(numero1)/parseInt(numero2)
+   
+  document.write(resultado)
 }
 
 </script>
