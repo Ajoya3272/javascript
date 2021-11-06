@@ -1,0 +1,17 @@
+<html>
+<script>
+
+  
+function file_extension(filename){
+        return (/[.]/.exec(filename)) ? /[^.]+$/.exec(filename)[0] : undefined;
+    }
+    
+    /* Ejecutamos */
+    
+    var extension = file_extension('aaaaa.loquesea.txt');
+    
+    alert(extension);
+</script>
+
+
+</html>

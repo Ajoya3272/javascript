@@ -1,0 +1,32 @@
+<html>
+
+
+<script>
+
+
+/*Escriba un programa JavaScript para calcular los días que quedan hasta la
+próxima Navidad.
+*/
+
+let hoy = new Date();
+let NavidadAño = hoy.getFullYear();
+
+if (hoy.getMonth() == 11 && hoy.getDate() > 25) {
+  NavidadAño = NavidadAño + 1;
+}
+
+let diaNavidad = new Date(NavidadAño, 11, 25);
+let diasMilisegundos = 1000 * 60 * 60 * 24;
+
+let diasRestantes = Math.ceil(
+  (diaNavidad.getTime() - hoy.getTime()) /
+   (diasMilisegundos)
+);
+
+alert(diasRestantes)
+</script>
+
+
+
+
+</html>
